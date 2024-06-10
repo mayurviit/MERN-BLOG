@@ -3,12 +3,12 @@ const { stringify } = require("querystring")
 
 const userSchema=new mongoose.Schema({
     username:{
-        type:string,
+        type:String,
         required:true,
         unique:true,
     },
     email:{
-        type:email,
+        type:String,
         required:true,
         unique:true,
     }, 
@@ -19,5 +19,5 @@ const userSchema=new mongoose.Schema({
 },
 {timestamp:true}
 );
-const User=mongoose.model('User',userSchema);
-export default User;
+module.exports=mongoose.model('User',userSchema);
+
