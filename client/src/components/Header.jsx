@@ -1,5 +1,5 @@
 import { Avatar, Button, Dropdown, Navbar, TextInput } from 'flowbite-react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { AiOutlineSearch } from 'react-icons/ai';
 import { FaMoon, FaSun } from 'react-icons/fa';
 // import { useSelector, useDispatch } from 'react-redux';
@@ -81,11 +81,11 @@ export default function Header() {
         >
            <FaMoon />
         </Button>
-        <Link to='/signin'>
+        <NavLink to='/signin'>
             <Button gradientDuoTone='purpleToBlue' outline>
               Sign In
             </Button>
-        </Link>
+        </NavLink>
         
         <Navbar.Toggle />
       </div>
@@ -103,3 +103,4 @@ export default function Header() {
     </Navbar>
   );
 }
+
