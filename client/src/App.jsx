@@ -10,7 +10,7 @@ import Header from './components/Header'
 import Footer from "./components/Footer"
 function App() {
   return (
-    <div>
+    <BrowserRouter>
       <Header/>
       <Routes>
         <Route path='/' element={<Home/>}/>
@@ -21,7 +21,7 @@ function App() {
         <Route path='/signup' element={<SignUp/>}/>
       </Routes>
       <Footer/>
-    </div>
+    </BrowserRouter>
   )
 }
 
