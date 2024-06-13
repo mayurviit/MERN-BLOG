@@ -7,7 +7,7 @@ const userRoutes =require("./routes/user.route.js");
 const authRoutes=require("./routes/auth.route.js")
 // dotenv.config();
 
-dotenv.config({path:"api/.env"});
+
 
 const uri = process.env.MONGODB_URL;
 // const mongoose = require('mongoose');
