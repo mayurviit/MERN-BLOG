@@ -3,6 +3,7 @@ import { Alert, Button, Label, TextInput } from 'flowbite-react';
 import { Link, useNavigate } from 'react-router-dom';
 import { FaSpinner } from 'react-icons/fa';
 import Spinner from "../components/Spinner"
+import OAuth from '../components/OAuth';
 function SignUp() {
 
   const [formData,setFormData]=useState({});
@@ -102,7 +103,7 @@ const handleSubmit=async (e)=>{
               ): 'Sign Up'
             }
             </Button>
-            
+            <OAuth/>
            
            
           </form>

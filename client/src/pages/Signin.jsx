@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { FaSpinner } from 'react-icons/fa';
 import { useDispatch,useSelector } from 'react-redux';
 import Spinner from "../components/Spinner"
+import OAuth from '../components/OAuth';
 import { signInFailure, signInStart, signInSuccess } from '../redux/user/userSlice';
 function Signin() {
 
@@ -94,7 +95,7 @@ const handleSubmit=async (e)=>{
               ): 'Sign In'
             }
             </Button>
-            
+            <OAuth/>
            
            
           </form>
