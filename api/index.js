@@ -4,7 +4,8 @@ const app=express();
 const dotenv=require("dotenv")
 
 const userRoutes =require("./routes/user.route.js");
-const authRoutes=require("./routes/auth.route.js")
+const authRoutes=require("./routes/auth.route.js");
+const cookieParser = require("cookie-parser");
 // dotenv.config();
 
 
@@ -24,6 +25,7 @@ mongoose.connect(uri, {
 } )
 
 app.use(express.json());
+app.use(cookieParser());
 app.listen(5000,()=>{
     console.log('server is running on port 5000')
 })
