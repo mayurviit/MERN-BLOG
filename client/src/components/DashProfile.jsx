@@ -238,6 +238,7 @@ export default function DashProfile() {
           gradientDuoTone='purpleToBlue'
           outline
           disabled={loading || imageFileUploading}
+          className='bg-gradient-to-r from-purple-500 to-pink-500 text-black font-bold py-1 px-1 text-center rounded '
         >
           {loading ? 'Loading...' : 'Update'}
         </Button>
@@ -246,7 +247,7 @@ export default function DashProfile() {
             <Button
               type='button'
               gradientDuoTone='purpleToPink'
-              className='w-full'
+              className='w-full '
             >
               Create a post
             </Button>
@@ -262,7 +263,7 @@ export default function DashProfile() {
         </span>
       </div>
       {updateUserSuccess && (
-        <Alert color='success' className='mt-5'>
+        <Alert color='success' className='mt-5 px-10 py-2 bg-green-300' >
           {updateUserSuccess}
         </Alert>
       )}
