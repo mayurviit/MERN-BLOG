@@ -250,7 +250,8 @@ export default function DashProfile() {
             <Button
               type='button'
               gradientDuoTone='purpleToPink'
-              className='w-full '
+               className='w-full bg-gradient-to-r from-purple-500 to-pink-500 text-black font-bold py-1 px-1 text-center rounded'
+
             >
               Create a post
             </Button>
