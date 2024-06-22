@@ -121,6 +121,7 @@ export default function CreatePost() {
             outline
             onClick={handleUpdloadImage}
             disabled={imageUploadProgress}
+            className='bg-gradient-to-r from-purple-500 to-pink-500 text-black font-bold py-1 px-1 text-center rounded '
           >
             {imageUploadProgress ? (
               <div className='w-16 h-16'>
