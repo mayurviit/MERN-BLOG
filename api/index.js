@@ -5,6 +5,7 @@ const dotenv=require("dotenv")
 
 const userRoutes =require("./routes/user.route.js");
 const authRoutes=require("./routes/auth.route.js");
+const postRoutes=require('./routes/post.route.js');
 const cookieParser = require("cookie-parser");
 // dotenv.config();
 
@@ -32,7 +33,7 @@ app.listen(5000,()=>{
 
 app.use('/api/user',userRoutes);
 app.use('/api/auth',authRoutes);
-
+app.use('/api/post',postRoutes);
 app.use((err,req,res,next)=>{
     const statusCode=err.statusCode || 500;
     const message=err.message || 'internal server error';
