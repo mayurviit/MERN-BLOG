@@ -67,6 +67,7 @@ export default function DashSidebar() {
               label={currentUser.isAdmin ? 'Admin' : 'User'}
               labelColor='dark'
               as='div'
+              className=' max-w-14 mx-8'
             >
               Profile
             </Sidebar.Item>
